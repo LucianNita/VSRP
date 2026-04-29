@@ -2,11 +2,6 @@
 # =============================================================================
 # Sensitivity analysis smoke test.
 #
-# Updated for Rounds 2 and 5:
-#   - ETS price sweep added
-#   - Emissions plots added
-#   - notebook_compatible=True for penalty alignment (Fix F10)
-#   - include_fueleu_penalty option demonstrated
 # =============================================================================
 
 from __future__ import annotations

@@ -2,12 +2,6 @@
 # =============================================================================
 # Minimal smoke test for the refactored CFA pipeline.
 #
-# Updated for Round 4:
-#   - UncertaintyConfig passed to train_cfa and test_cfa_policy
-#   - SPSA policy trained and tested
-#   - plot_cfa_tail_risk and plot_regulatory_compliance_and_ets called
-#   - notebook_compatible=True for penalty alignment (Fix F10)
-#   - objective_comparable flag noted in summary output
 # =============================================================================
 
 from __future__ import annotations
@@ -76,7 +70,7 @@ def print_policy_summary(name: str, df) -> None:
         f"{df['theta_max_h'].iloc[-1]:.4f}"
     )
 
-    # Note on objective comparability (Fix F5)
+    # Note on objective comparability 
     if "objective_comparable" in df.columns:
         comparable = df["objective_comparable"].iloc[0]
         if not comparable:
@@ -124,7 +118,7 @@ def main() -> None:
     print("=" * 88)
 
     # -----------------------------------------------------------------
-    # 1. Build base instance (notebook-compatible penalties, Fix F10)
+    # 1. Build base instance (notebook-compatible penalties)
     # -----------------------------------------------------------------
     containers = generate_containers(
         ports=BASE_PORTS,
@@ -216,7 +210,7 @@ def main() -> None:
         solve_options=options,
         seed=42,
         update_policy="decay",
-        step_size=1.0,       # Fix F13: step_size now correctly used as step_up
+        step_size=1.0,       
         step_down=0.25,
         uncertainty_config=uncertainty_config,
     )
@@ -318,7 +312,7 @@ def main() -> None:
         print_tail_risk(name, summary)
 
     # -----------------------------------------------------------------
-    # 9. Comparison (realized metrics only — Fix F5)
+    # 9. Comparison (realized metrics only)
     # -----------------------------------------------------------------
     print("\nPolicy Comparison (realized metrics only):")
     print("-" * 50)

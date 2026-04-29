@@ -2,11 +2,6 @@
 # =============================================================================
 # Benchmark smoke test.
 #
-# Updated for Rounds 3 and 5:
-#   - include_fueleu_penalty option
-#   - Stability columns printed from summary
-#   - notebook_compatible=True noted (containers generated internally
-#     by run_benchmark via generate_containers)
 # =============================================================================
 
 from __future__ import annotations
@@ -43,7 +38,7 @@ def main() -> None:
         alpha=0.5,
         allow_swap=True,
         max_skip=1,
-        include_fueleu_penalty=False,
+        include_fueleu_penalty=True,
         solve_options=SolveOptions(time_limit_s=60, mip_gap=0.01),
     )
 

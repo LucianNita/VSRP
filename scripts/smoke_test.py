@@ -2,12 +2,6 @@
 # =============================================================================
 # Minimal end-to-end smoke test for the refactored VSRP codebase.
 #
-# Updated for Rounds 1-5:
-#   - Prints swap_ordering_vars_enabled, fuel_price_usd_per_tonne
-#   - Prints container_valid, skipped_ports_valid from ValidationResult
-#   - Prints full emissions summary including CII, FuelEU
-#   - Prints swap group info from route legs
-#   - Uses notebook_compatible=True for penalty alignment (Fix F10)
 # =============================================================================
 
 from __future__ import annotations
@@ -28,7 +22,7 @@ def main() -> None:
     print("=" * 72)
 
     # -----------------------------------------------------------------
-    # 1. Generate containers (notebook-compatible penalties, Fix F10)
+    # 1. Generate containers (notebook-compatible penalties)
     # -----------------------------------------------------------------
     containers = generate_containers(
         ports=BASE_PORTS,
