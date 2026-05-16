@@ -1,5 +1,0 @@
-seed,n_rows,unique_routes,unique_strategies,any_route_change,any_strategy_change,flat_seed
-7,8,1,1,False,False,True
-21,8,1,1,False,False,True
-42,8,1,1,False,False,True
-99,8,1,1,False,False,True

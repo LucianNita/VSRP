@@ -1,6 +1,0 @@
-episode,phase,policy,objective_comparable,n_vessels,fleet_objective_value,fleet_feasible,realized_total_missed,realized_service_cost_usd,realized_delay_cost_usd,realized_misconnection_cost_usd,realized_fuel_cost_usd,realized_ets_cost_eur,realized_carbon_price_eur,realized_fuel_price_usd,realized_fueleu_compliant,theta_mean_h,theta_max_h
-1,train,additive,False,3,1418970.9375,True,8,628860.0,626860.0,2000.0,1781529.8337127566,988627.619303155,79.1084707458682,443.9171849076931,False,0.8,3.0
-2,train,additive,False,3,1468475.9375,True,8,628860.0,626860.0,2000.0,2346502.425844727,973145.7873280619,77.8696382188573,584.6956540094708,False,1.6,6.0
-3,train,additive,False,3,1405406.09375,True,9,601960.0,598960.0,3000.0,1912252.9898501304,761316.3491693231,61.6666595435184,482.33549643978733,False,2.5,9.0
-4,train,additive,False,3,1494724.53125,True,10,700970.0,697970.0,3000.0,2319613.0148180705,799008.8437787895,64.92317199919893,586.924568118039,False,3.5,12.0
-5,train,additive,False,3,1478429.0625,True,9,727870.0,725870.0,2000.0,2580470.0566074713,714067.4086715208,56.67009171771476,637.7230818036111,False,4.4,15.0
