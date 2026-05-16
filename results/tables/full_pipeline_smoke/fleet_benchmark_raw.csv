@@ -1,0 +1,4 @@
+solver_name,fleet_id,scenario,n_vessels,feasible,optimal,fleet_objective_value,avg_runtime_s,total_runtime_s,total_delayed,total_misconnected,total_skipped,total_swapped,total_co2_t,total_ets_eur,all_routes_valid,all_strategies_consistent,status,error,fleet_objective_recompute,scenario_description
+Xpress,Case1_Delayed,Case1_Delayed,3,True,True,1320779.375,0.010507966668228619,0.031523900004685856,3.0,2.0,7.0,2.0,12259.915312499998,796894.4953124998,True,True,,,1320779.375,"Multiple delayed vessels, no port penalties"
+HiGHS,Case1_Delayed,Case1_Delayed,3,True,True,1320779.375,0.047937500000747,0.143812500002241,,,,,,,,,,,0.0,"Multiple delayed vessels, no port penalties"
+CBC,Case1_Delayed,Case1_Delayed,3,True,True,1320779.375,0.14065910000014506,0.4219773000004352,,,,,,,,,,,0.0,"Multiple delayed vessels, no port penalties"

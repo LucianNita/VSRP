@@ -1,0 +1,3 @@
+n_ports,n_containers,success,feasible,optimal,objective_value,runtime_s,mip_gap,status,raw_status_code,error_message
+10,50,True,True,True,138138.28125,0.04048030000194558,0.0,MIP_SOLUTION,3.0,
+20,200,True,False,False,,,,ERROR,,?120 Error: Problem has too many rows and columns. The maximum is 5000
