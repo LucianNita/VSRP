@@ -1,0 +1,4 @@
+scenario,description,n_vessels,total_containers,feasible,optimal,fleet_objective_value,avg_runtime_s,total_runtime_s,total_delayed,total_misconnected,total_skipped,total_swapped,total_co2_t,total_ets_eur,all_feasible,all_route_valid,all_strategy_consistent
+Case1_Delayed,"Multiple delayed vessels, no port penalties",3,10,True,True,1320779.375,0.013667233331943862,0.041001699995831586,3,2,7,2,12259.915312499998,796894.4953124998,True,True,True
+Case2_PortClosure,"LGB port closure modelled as $240,000 visit penalty",3,10,True,True,1369410.3125,0.014225166666922936,0.04267550000076881,5,5,8,0,11783.32734375,765916.2773437499,True,True,True
+Case3_Congestion,"DHB congestion modelled as $120,000 visit penalty",3,10,True,True,1365009.0625,0.015050399999987954,0.045151199999963865,3,3,7,2,12235.830468749999,795328.9804687499,True,True,True
